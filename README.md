@@ -48,13 +48,22 @@ Objectif : segmenter les clients, calculer leur **Customer Lifetime Value (CLV)*
 
 ### 📈 Résultats clés
 
+#### 1. Matrice de corrélations
+![Matrice de corrélations des variables clés](images/matrice_correlations.png)
+
+#### 2. Méthode Elbow
+![Méthode Elbow pour déterminer le nombre optimal de clusters](images/methode_elbow.png)
+
+#### 3. Visualisation PCA 2D des clusters
+![Visualisation PCA 2D des 4 segments clients](images/pca_2d_clusters.png)
+
+#### 4. Dendrogramme Hierarchical Clustering
+![Dendrogramme Hierarchical Clustering](images/dendrogramme_hierarchical.png)
+
 #### Validation des clusters
 - **Silhouette Score :** 0.238 (modéré – typique des données clients réelles)  
 - **Davies-Bouldin Index :** 1.532  
 → Les clusters sont acceptables et **business-cohérents** (confirmé par PCA et profils).
-
-#### Visualisation PCA 2D des clusters
-Les 4 segments montrent une séparation visible malgré un léger chevauchement (cluster 0 jaune vs cluster 3 turquoise particulièrement distincts).
 
 #### Profil final des segments + CLV
 
@@ -88,11 +97,11 @@ Les 4 segments montrent une séparation visible malgré un léger chevauchement 
 
 ---
 
-### 📁 Repository
+### 📁 Fichiers du projet
 
-- `marketing_campaign.csv`  
-- `notebook/` → Colab complet (17 cellules)  
-- `images/` → PCA, Elbow, Corrélations, Dendrogramme, Profils  
-- `README.md`
+- `marketing_campaign.csv` → Dataset original  
+- **[Notebook complet (Google Colab)](https://colab.research.google.com/drive/1r_5WU-azLQv0BNF87V_qPD061byFuQ7p?usp=sharing)** → Tout le code du projet  
+- `images/` → Tous les graphiques du projet  
+- `README.md` → Ce fichier
 
 **Auteur :** Alice Plaquet
